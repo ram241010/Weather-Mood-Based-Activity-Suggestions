@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Mood-Based Activity Suggestions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Weather Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather & Mood-Based Activity Suggestions</h1>
+
+        <!-- Weather and Mood Input Form -->
+        <div class="weather-container">
+            <input type="text" id="city" placeholder="Enter your city" />
+            <button id="getWeather">Get Weather</button>
+        </div>
+
+        <div class="weather-info">
+            <p id="weather"></p>
+            <p id="temp"></p>
+            <p id="forecast"></p>
+            <div id="weatherIcon"></div>
+        </div>
+
+        <!-- Mood Tracker -->
+        <div class="mood-container">
+            <h3>How are you feeling today?</h3>
+            <select id="moodSelect">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="tired">Tired</option>
+                <option value="neutral">Neutral</option>
+            </select>
+        </div>
+
+        <!-- Suggested Activities -->
+        <div class="suggestions-container">
+            <h3>Suggested Activities:</h3>
+            <ul id="suggestionsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
